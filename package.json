@@ -1,0 +1,15 @@
+{
+	"name": "hannah",
+	"main": "dist/main.js",
+	"dependencies": {
+		"@sapphire/framework": "latest",
+		"@sapphire/plugin-logger": "^4.0.1",
+		"@types/mongoose": "^5.11.97",
+		"discord.js": "14.x",
+		"dotenv": "^16.3.1",
+		"mongoose": "^8.0.3"
+	},
+	"scripts": {
+		"start": "tsc && node dist/main.js"
+	}
+}
