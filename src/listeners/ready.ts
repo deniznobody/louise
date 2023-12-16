@@ -9,7 +9,7 @@ export class ReadyListener extends Listener {
     this.container.logger.info(`Successfully logged in as ${username} (${id})`);
     client.user?.setPresence({
         activities: [{
-            name: '🧏 this is the mewing emoji',
+            name: `.gg/satanist ${client.guilds.cache.size} servers`, 
             type: ActivityType.Streaming,
             url: 'https://twitch.tv/elraenn'
         }],

@@ -9,11 +9,13 @@ export class Login extends Command {
       ...options,
       name: 'login',
       aliases: ['lfmlg'],
-      description: 'nowplaying command for lastfm'
+      description: 'Login to lastfm using this command \n \`\`\`Usage: ,login <lastfm username>\`\`\`'
     });
   }
 
   public async messageRun(message: Message, args: Args) {
+    const user = await Lstfm.findOne({userId: message.author.id});
+    if(user) return message.channel.send("You are already logged in.");
     const username = await args.pick('string');
     const userId = message.author.id
 

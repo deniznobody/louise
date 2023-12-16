@@ -9,7 +9,7 @@ export class Avatar extends Command {
       ...options,
       name: 'avatar',
       aliases: ['av'],
-      description: 'avatar command'
+      description: 'Shows a users avatar \n \`\`\`Usage: ,avatar <@user>\`\`\`'
     });
   }
 
